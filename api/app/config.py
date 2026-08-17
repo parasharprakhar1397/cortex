@@ -6,6 +6,8 @@ class Settings(BaseSettings):
     redis_url: str = "redis://localhost:6379/0"
     clerk_secret_key: str = ""
     clerk_jwks_url: str = "https://api.clerk.com/v1/jwks"
+    clerk_issuer: str = ""
+    clerk_publishable_key: str = ""
 
     class Config:
         env_file = ".env"
